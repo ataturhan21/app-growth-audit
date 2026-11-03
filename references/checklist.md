@@ -62,7 +62,7 @@ Evidence: the store lookup/listing data and the screenshot images. Applies to ev
 ### L-HONEST · weight 3 · Listing claims are honest
 - **Look for**: every statistic, award, user count or "science-backed"/"clinically proven" claim in the listing or screenshots has a visible basis; screenshots show features the app really has.
 - **Why**: misleading marketing "is grounds for removal" — flag as **possible review risk**, not legal advice.
-- **Verify**: quote each claim with its location. Fail if a number or award has no visible basis (e.g. a percentage on a screenshot with no source), or a feature appears in screenshots but nowhere in the app (only checkable with a project folder).
+- **Verify**: quote each claim with its location. Fail if a number or award has no visible basis (e.g. a percentage on a screenshot with no source), or a feature appears in screenshots but nowhere in the app (only checkable with a project folder). Sample data shown *inside* the app UI (an example user's score or percentile in a device frame) is a demo of the product, not a claim; a statistic in a caption, badge or the description, stated as a fact about users or the app ("92% feel more confident"), is a claim.
 - **Source**: A-RG 2.3.1(a), A-RG 1.1.6
 
 ---

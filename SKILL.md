@@ -25,7 +25,7 @@ State every default you took in the report's **Inputs** line, so the reader know
 ## Ground rules (they still apply after context is summarized)
 
 - **Evidence or Not assessed.** Every Pass and Fail cites a quote, a screenshot (file name, or listing position like `listing screenshot #2`), a `path:line`, or a URL. If you can't see it, it's Not assessed with the input that would unlock it.
-- **No invented numbers.** A number (limit, benchmark, statistic, lift) appears only if it's in [references/sources.md](references/sources.md) with its source, or is a fact read from the evidence (a rating, a price, a screen count). Never estimate conversion lifts or revenue.
+- **No invented numbers.** A number (limit, length, benchmark, statistic, lift) appears only if it's in [references/sources.md](references/sources.md) with its source, or is a fact read from the evidence (a rating, a price, a screen count). This includes numbers inside a suggested fix: write "up to 30 seconds" (sourced), not a range you remember ("15–30 s"). Never estimate conversion lifts or revenue.
 - **Public pages only.** No logins, purchases, trials, account creation, or scraping beyond the public listing, lookup and review feeds. Don't start the app's payment flow to see a paywall.
 - **Project folders are read-only.** Read code and string files; never edit, commit, install, build, or run scripts in them. Quote at most a short line from internal files; never copy secrets, keys, tokens or config values into the report (name them only).
 - **Not legal advice.** Store-guideline problems are labelled **possible review risk**, citing the guideline, never "illegal" or "will be rejected".
@@ -39,13 +39,13 @@ State every default you took in the report's **Inputs** line, so the reader know
 
 ## 2. Gather evidence
 
-Save everything under the session scratchpad (`<scratchpad>/app-growth-audit/<app-slug>/`), never in the user's project.
+Save everything under the session scratchpad (`<scratchpad>/app-growth-audit/<app-slug>/`), never in the user's project. On Windows, keep that path short and use absolute paths rather than `cd` into deep folders: paths past 260 characters break `git`, Python and the shell itself.
 
 **App Store**
 1. `curl -s "https://itunes.apple.com/lookup?id=<id>&country=<cc>"` → `trackName`, `description`, `screenshotUrls`, `averageUserRating`, `userRatingCount`, `version`, `currentVersionReleaseDate`, `releaseNotes`, `languageCodesISO2A`, `formattedPrice`, `primaryGenreName`, `sellerName`. (On Windows, run Python with `PYTHONIOENCODING=utf-8` when printing this text.)
 2. Recent reviews: `curl -s "https://itunes.apple.com/<cc>/rss/customerreviews/page=1/id=<id>/sortby=mostrecent/json"` → up to 50 reviews (`feed.entry`; absent when there are none). Tally ratings and recurring complaints.
 3. The **subtitle** and the in-app purchase flag aren't in the lookup: read them from the listing page (`apps.apple.com/<cc>/app/id<id>`) with a browser tool's page-text reader or `WebFetch`. If both fail, L-TITLE is judged on the name alone and says so.
-4. **Screenshots — look at the images; don't infer them from file names.** Try in order: (a) download each URL (replace the trailing `<w>x<h>bb.jpg` with `392x696bb.jpg`) with `curl` into the scratchpad and `Read` it; (b) if downloads fail (some networks reset non-browser connections to the image CDN), open each image URL in a browser tool and screenshot it, using your own tab if other agents may share the browser; (c) if neither works, L-SHOTS3/L-SHOTSALL/L-HONEST are Not assessed — unlock: save the screenshots into a folder and pass `screenshots=`. Record each caption verbatim with its position.
+4. **Screenshots — look at the images; don't infer them from file names.** The lookup's `screenshotUrls` can be a different or older set than what the live listing shows (often another device size), so when you can render the listing page, judge the screenshot checks on the **live page's media strip** (its `<img>`/`<source>` URLs, in order) and note the lookup set if it differs. Try in order: (a) download each URL (replace the trailing `<w>x<h>bb.jpg` with `392x696bb.jpg`) with `curl` into the scratchpad and `Read` it; (b) if downloads fail (some networks reset non-browser connections to the image CDN), open each image URL in a browser tool and screenshot it, using your own tab if other agents may share the browser; (c) if neither works, L-SHOTS3/L-SHOTSALL/L-HONEST are Not assessed — unlock: save the screenshots into a folder and pass `screenshots=`. Record each caption verbatim with its position.
 
 **Google Play** — fetch `https://play.google.com/store/apps/details?id=<pkg>&hl=en&gl=<cc>` (page text) for title, short description, description, rating, review count, "Updated on", and screenshot images (view them as above). Written reviews visible on the page count as recent reviews.
 
