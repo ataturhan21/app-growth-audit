@@ -1,0 +1,18 @@
+[
+  {"query": "audit my app's store listing https://apps.apple.com/us/app/sleep-max-rest-best/id6745000000 — screenshots feel weak", "should_trigger": true},
+  {"query": "review my paywall, screenshots are in ~/Desktop/paywall-shots (annual vs weekly, 3 day trial)", "should_trigger": true},
+  {"query": "why isn't my app growing? it's a habit tracker on iOS, downloads flat since june, code is in ./mobile", "should_trigger": true},
+  {"query": "roast my app store page pls https://apps.apple.com/us/app/umax-become-hot/id6471026798", "should_trigger": true},
+  {"query": "is my onboarding too long before people see their result? expo app in this repo, rc paywall at the end", "should_trigger": true},
+  {"query": "compare our play store listing with Fitbod and Strong and tell me what to change first: https://play.google.com/store/apps/details?id=com.example.lift", "should_trigger": true},
+  {"query": "trial-to-paid is bad on my subscription app, can you look at the store page and paywall and tell me what to fix", "should_trigger": true},
+  {"query": "what's wrong with my app's screenshots and subtitle? link: apps.apple.com/us/app/id1234567890", "should_trigger": true},
+  {"query": "set up RevenueCat offerings and a paywall component in my React Native app", "should_trigger": false},
+  {"query": "our landing page converts badly, audit the hero section and signup form on https://example.com", "should_trigger": false},
+  {"query": "write the App Store release notes for version 2.5 from the git log", "should_trigger": false},
+  {"query": "my iOS build got rejected under guideline 4.3 spam, help me write the appeal", "should_trigger": false},
+  {"query": "pull last month's MRR and churn from our RevenueCat dashboard into a chart", "should_trigger": false},
+  {"query": "fix the crash on the paywall screen when prices fail to load (PaywallScreen.tsx)", "should_trigger": false},
+  {"query": "translate my app store description into German and Spanish", "should_trigger": false},
+  {"query": "make the onboarding screens in this app look nicer, the spacing is off", "should_trigger": false}
+]
