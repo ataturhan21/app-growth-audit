@@ -70,7 +70,7 @@ Read [references/checklist.md](references/checklist.md) and run every check in t
 
 ## 4. Score and rank
 
-Follow [references/scoring.md](references/scoring.md) exactly: area score = weighted share of assessed checks passed; fix priority = impact (1–5) × confidence (1–3) ÷ effort (1–3), ties by impact, then lower effort. Show the arithmetic so the reader can recompute it. Keep the top N; list the remaining Fails in one line each under "Also failing".
+Follow [references/scoring.md](references/scoring.md) exactly: area score = weighted share of assessed checks passed; fix priority = impact (1–5) × confidence (1–3) ÷ effort (1–3), ties by impact, then lower effort. Show the arithmetic so the reader can recompute it. Before sorting, re-read every impact against the table in scoring.md: a Fail you label **possible review risk** is impact 5, and the same problem found in two places (e.g. one claim on the listing and on the paywall) gets the same impact in both. Keep the top N; list the remaining Fails in one line each under "Also failing".
 
 ## 5. Write the report
 

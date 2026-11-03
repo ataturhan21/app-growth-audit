@@ -137,7 +137,7 @@ Evidence: paywall screenshots, or the project's paywall code and string files (p
 
 ### P-PROOF · weight 2 · Social proof is honest
 - **Look for**: ratings, user counts, testimonials and statistics on the paywall, and whether each matches a verifiable source (store rating, a cited study).
-- **Verify**: quote each item. Fail if a number has no source the user can see (e.g. a hard-coded percentage), or a rating/count doesn't match the store lookup. Possible review risk.
+- **Verify**: quote each item. Fail if a number has no source the user can see (e.g. a hard-coded percentage), or a rating/count doesn't match the store lookup. With a project folder, also trace every personal number shown on or just before the paywall (a score, a "potential", a percentile) to the code that computes it: Fail if any part of it comes from something other than the user's own data (a random value, a device or install ID, a fixed constant) while the screen presents it as their result. Possible review risk.
 - **Source**: A-RG 2.3.1(a), A-RG section 3 intro
 
 ### P-CLOSE · weight 3 · A visible way out
