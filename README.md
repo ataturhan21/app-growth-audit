@@ -89,7 +89,7 @@ Excerpt from a store-link-only audit of [Fitbod](https://apps.apple.com/us/app/f
 | `umax-store-only` | [Umax](https://apps.apple.com/us/app/umax-become-hot/id6471026798) (face rating) | [report](evals/reports/umax-store-only.md) |
 | `fitbod-store-only` | [Fitbod](https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543) (fitness) | [report](evals/reports/fitbod-store-only.md) |
 
-Each report was checked by hand before release: every quote was found in the saved review feed or listing, every number traced to `sources.md` or the evidence, and every ranking recomputed. [`evals/trigger-queries.json`](evals/trigger-queries.json) holds 16 queries for testing when the skill should and shouldn't trigger.
+Each report was checked by hand before release: every quote was found in the saved review feed or listing, every number traced to `sources.md` or the evidence, and every ranking recomputed. [`evals/reports/RESULTS.md`](evals/reports/RESULTS.md) lists what each round got wrong and what changed in the skill as a result. [`evals/trigger-queries.json`](evals/trigger-queries.json) holds 16 queries for testing when the skill should and shouldn't trigger.
 
 Reports are snapshots of public listings on 2026-11-03; the listings will change.
 
