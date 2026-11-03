@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: fitbod-store-only
+expected_outcome: |
+  A store-link-only report for a mature, highly rated fitness app: high listing score, rating and review count quoted from the lookup, any claims in screenshots checked against the lookup (e.g. a review count claim), onboarding and paywall Not assessed.

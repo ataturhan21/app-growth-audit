@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: looks-max-with-project
+expected_outcome: |
+  Same report, with onboarding and paywall assessed from the read-only project: screen order to the first result, permission priming, paywall plans, trial handling, close control, restore and legal links, each cited as path:line. Fixes add a File to change column. Nothing in the project is edited. Only runnable on the owner's machine.

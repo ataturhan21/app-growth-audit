@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: umax-store-only
+expected_outcome: |
+  A store-link-only report for a competitor-style app with many ratings: listing and copy checks assessed, reviews quoted for recurring objections (paywall before results, invite-friends gate, crashes), onboarding and paywall Not assessed.

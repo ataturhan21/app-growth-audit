@@ -1,0 +1,17 @@
+{
+  "name": "app-growth-audit",
+  "owner": { "name": "Ata Turhan" },
+  "metadata": {
+    "description": "Evidence-based growth audit for mobile subscription apps",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "app-growth-audit",
+      "description": "Audit a subscription app's store listing, screenshots, onboarding and paywall against an evidence-based checklist and get the top 10 fixes, each with its evidence.",
+      "source": "./",
+      "version": "1.0.0",
+      "license": "MIT"
+    }
+  ]
+}
