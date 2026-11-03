@@ -43,6 +43,8 @@ priority = impact × confidence ÷ effort      (range 0.33–15)
 | 2 | Inferred from strong evidence: code paths whose runtime order isn't certain, a pattern across several reviews |
 | 1 | Plausible from indirect evidence: a single review, a config file that may not ship |
 
+Confidence rates whether the **problem exists as described**, not how big its effect will be (that's impact). A subtitle quoted from the live listing is confidence 3 even though its effect on search is uncertain.
+
 ### Effort (1–3): what it costs the owner
 
 | Effort | Meaning |
