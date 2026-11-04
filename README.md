@@ -1,5 +1,7 @@
 # app-growth-audit
 
+> **Moved.** This skill is now maintained in the `solarity-ai` plugin ([Solarity-AI/skills](https://github.com/Solarity-AI/skills), version 1.16.85 and later). This repository is archived and stays here as the v1.0.0 release, with its eval reports.
+
 A [Claude Code](https://claude.com/claude-code) skill that audits a mobile subscription app the way a stranger meets it — **store listing → screenshots → onboarding → paywall** — and returns the 10 fixes worth doing first.
 
 Every finding cites evidence you can open (a quote, a screenshot, a `file:line` or a URL), and every number comes from a listed source. When the evidence isn't there, the check says **Not assessed** and names the input that would unlock it, instead of guessing.
