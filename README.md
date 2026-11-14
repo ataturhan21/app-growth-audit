@@ -109,6 +109,6 @@ Reports are snapshots of public listings on 2026-11-03; the listings will change
 
 The checklist's scope (listing → onboarding → paywall → lifecycle) was inspired by two talks at RevenueCat's App Growth Annual 2026: "Why your app's marketing stalls, and what to fix first" and "The big app roast: paywall and lifecycle teardowns". The rules themselves are sourced from Apple's and Google's published guidelines.
 
-## License
+## Copyright
 
-[MIT](LICENSE)
+© Ata Turhan. All rights reserved. This repository has no open-source license: its code may not be copied, modified or redistributed.

@@ -11,7 +11,7 @@
       "description": "Audit a subscription app's store listing, screenshots, onboarding and paywall against an evidence-based checklist and get the top 10 fixes, each with its evidence.",
       "source": "./",
       "version": "1.0.0",
-      "license": "MIT"
+      "license": "UNLICENSED"
     }
   ]
 }
